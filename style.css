@@ -1,0 +1,1154 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+  color: white;
+  background-color: red;
+}
+
+::selection {
+  color: white;
+  background-color: red;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  padding: 25px 50px;
+  color: #fff;
+  background-color: rgba(207, 24, 24, 0.856);
+  border-radius: 50px;
+  font-size: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: background 800ms, color 800ms, border 800ms;
+  transition: background 800ms, color 800ms, border 800ms;
+}
+
+.btn:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  font-size: 20px;
+  -webkit-animation: bottoming 900ms forwards ease 200ms;
+          animation: bottoming 900ms forwards ease 200ms;
+  font-family: 'Lato', sans-serif;
+}
+
+nav p {
+  display: inline;
+}
+
+nav img {
+  margin-bottom: -10px;
+  width: 40px;
+}
+
+nav ul {
+  display: inline;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+nav ul li a {
+  -webkit-transition: 900ms;
+  transition: 900ms;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+nav ul li a::after {
+  display: block;
+  z-index: 100;
+  content: '';
+  border-bottom: 3px solid red;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+nav ul li a:hover::after {
+  -webkit-transform: scaleX(100%);
+          transform: scaleX(100%);
+}
+
+nav .toggler {
+  display: none;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: auto;
+}
+
+.main .image {
+  width: 30%;
+  -webkit-animation: righting 900ms forwards ease 200ms;
+          animation: righting 900ms forwards ease 200ms;
+}
+
+.main .image img {
+  width: 100%;
+}
+
+.main .write {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding-left: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-animation: lefting 900ms forwards ease 200ms;
+          animation: lefting 900ms forwards ease 200ms;
+}
+
+.main .write h2, .main .write p, .main .write button {
+  margin: 10px;
+}
+
+.main .write .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.gift {
+  width: 100%;
+}
+
+.gift h2 {
+  text-align: center;
+  margin: auto;
+  margin-top: 90px;
+  font-size: 30px;
+}
+
+.gift .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  width: 60%;
+  margin-top: 90px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: bottoming 900ms forwards ease 200ms;
+          animation: bottoming 900ms forwards ease 200ms;
+}
+
+.gift .container .gifting {
+  width: 30%;
+  margin: 10px;
+}
+
+.gift .container .gifting img {
+  width: 40%;
+}
+
+.main1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.main1 .image {
+  width: 30%;
+  -webkit-animation: lefting 900ms forwards ease 200ms;
+          animation: lefting 900ms forwards ease 200ms;
+}
+
+.main1 .image img {
+  width: 100%;
+}
+
+.main1 .write {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding-right: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-animation: righting 900ms forwards ease 200ms;
+          animation: righting 900ms forwards ease 200ms;
+}
+
+.main1 .write h2, .main1 .write p, .main1 .write button {
+  margin: 10px;
+}
+
+.main1 .write .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.sharegift {
+  width: 40%;
+  margin: auto;
+}
+
+.sharegift h2 {
+  text-align: center;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.sharegift .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sharegift .container .box {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.404);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.404);
+  width: 25%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sharegift .container .box img {
+  width: 100%;
+  -webkit-animation: uping 900ms forwards ease 200ms;
+          animation: uping 900ms forwards ease 200ms;
+}
+
+.sharegift .container .box .write {
+  text-align: center;
+}
+
+.sharegift .container .box .heart {
+  float: right;
+  padding: 10px;
+}
+
+.newgifts h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.newgifts .container {
+  width: 50%;
+  margin: auto;
+}
+
+.newgifts .container .box {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.609);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.609);
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+  margin: 40px 0;
+}
+
+.newgifts .container .box .image {
+  background-color: red;
+  border-radius: 50px 50px 369px 369px / 25px 25px 150px 150px;
+  -webkit-animation: bottoming 900ms forwards ease 200ms;
+          animation: bottoming 900ms forwards ease 200ms;
+}
+
+.newgifts .container .box .write {
+  text-align: center;
+  padding: 20px;
+}
+
+.newgifts .container .box .heart {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.goodwish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+  margin: auto;
+  padding: 70px;
+  background-color: red;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  -webkit-animation: bottoming 900ms forwards ease 200ms;
+          animation: bottoming 900ms forwards ease 200ms;
+}
+
+.goodwish .write {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+  width: 50%;
+}
+
+.goodwish .write h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  -webkit-animation: lefting 900ms forwards ease 200ms;
+          animation: lefting 900ms forwards ease 200ms;
+}
+
+.goodwish .write input[type=text] {
+  width: 80%;
+  text-align: center;
+  height: 50px;
+  border-radius: 50px;
+  padding: 30px;
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+.goodwish .write input[type=submit] {
+  background-color: black;
+  color: white;
+  width: 80%;
+  text-align: center;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.goodwish .ima {
+  width: 50%;
+}
+
+.goodwish .ima img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: righting 900ms forwards ease 200ms;
+          animation: righting 900ms forwards ease 200ms;
+}
+
+.footerall {
+  position: relative;
+}
+
+.footerall .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 70%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footerall .footer .container {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footerall .footer .container div {
+  margin: 20px 0;
+}
+
+.footerall .footer .container div:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.footerall .footer .container .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footerall .footer .container .name img {
+  width: 15%;
+  height: auto;
+}
+
+.footerall .footer .container h2 {
+  margin: 10px 0 10px 0;
+  -webkit-transition: 900ms;
+  transition: 900ms;
+}
+
+.footerall .footer .container h2:hover {
+  color: red;
+}
+
+.footerall .imagesbell .img1 {
+  width: 9%;
+  position: absolute;
+  top: 75%;
+  left: 10%;
+}
+
+.footerall .imagesbell .img1 img {
+  width: 100%;
+}
+
+.footerall .imagesbell .img2 {
+  width: 7%;
+  position: absolute;
+  top: 85%;
+  right: 30%;
+}
+
+.footerall .imagesbell .img2 img {
+  width: 100%;
+}
+
+.copywrite {
+  margin: 60px 0;
+  color: red;
+  text-align: center;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+@-webkit-keyframes righting {
+  0% {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+  }
+}
+
+@keyframes righting {
+  0% {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes uping {
+  0% {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    opacity: 1;
+  }
+}
+
+@keyframes uping {
+  0% {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bottoming {
+  0% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+  }
+}
+
+@keyframes bottoming {
+  0% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes lefting {
+  0% {
+    -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    opacity: 1;
+  }
+}
+
+@keyframes lefting {
+  0% {
+    -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes downing {
+  0% {
+    margin-top: -90px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes downing {
+  0% {
+    margin-top: -90px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .goodwish {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  .goodwish .ima {
+    width: 80%;
+    margin: auto;
+  }
+  .goodwish .write {
+    width: 120%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .goodwish {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footerall .footer {
+    width: 90%;
+  }
+  .footerall .imagesbell .img1 {
+    width: 9%;
+    position: absolute;
+    top: 25%;
+    left: 94%;
+  }
+  .footerall .imagesbell .img1 img {
+    width: 100%;
+  }
+  .footerall .imagesbell .img2 {
+    width: 7%;
+    position: absolute;
+    top: 85%;
+    right: 20%;
+  }
+  .footerall .imagesbell .img2 img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .footerall .footer {
+    width: 90%;
+  }
+  .footerall .footer .container {
+    width: 50%;
+  }
+  .footerall .imagesbell .img1 {
+    width: 15%;
+    position: absolute;
+    top: 25%;
+    left: 90%;
+  }
+  .footerall .imagesbell .img1 img {
+    width: 100%;
+  }
+  .footerall .imagesbell .img2 {
+    width: 20%;
+    position: absolute;
+    top: 85%;
+    right: 10%;
+  }
+  .footerall .imagesbell .img2 img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .btn {
+    padding: 10px 30px;
+  }
+  .footerall .footer {
+    width: 90%;
+  }
+  .footerall .footer .container {
+    width: 100%;
+    text-align: center;
+  }
+  .footerall .footer .container .name {
+    margin: auto;
+  }
+  .footerall .footer .container .name img {
+    width: 20%;
+  }
+  .footerall .imagesbell .img1 {
+    width: 30%;
+    position: absolute;
+    top: 25%;
+    left: 80%;
+  }
+  .footerall .imagesbell .img1 img {
+    width: 100%;
+  }
+  .footerall .imagesbell .img2 {
+    width: 35%;
+    position: absolute;
+    top: 80%;
+    left: -10%;
+  }
+  .footerall .imagesbell .img2 img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .sharegift {
+    width: 80%;
+    margin: auto;
+  }
+  .sharegift h2 {
+    text-align: center;
+    font-weight: bold;
+    margin: 30px 0;
+  }
+  .sharegift .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sharegift .container .box {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.548);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.548);
+    width: 74%;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  .sharegift .container .box img {
+    width: 100%;
+    border: none;
+  }
+  .sharegift .container .box .write {
+    text-align: center;
+    padding: 20px;
+  }
+  .sharegift .container .box .write h1 {
+    font-family: 'Lato', sans-serif;
+  }
+  .sharegift .container .box .write p {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .goodwish {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 70px;
+    background-color: red;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  .goodwish .write {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+  .goodwish .write h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .goodwish .write input[type=text] {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 20px;
+    margin: 30px 0;
+  }
+  .goodwish .write input[type=submit] {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .goodwish .ima {
+    width: 100%;
+  }
+  .goodwish .ima img {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 444px) {
+  .goodwish {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 70px;
+    background-color: red;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  .goodwish .write {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+    width: 100%;
+  }
+  .goodwish .write h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .goodwish .write input[type=text] {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 15px;
+    margin: 30px 0;
+  }
+  .goodwish .write input[type=submit] {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  .goodwish .ima {
+    width: 100%;
+  }
+  .goodwish .ima img {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .sharegift {
+    width: 70%;
+  }
+  .newgifts .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .sharegift {
+    width: 90%;
+  }
+  .newgifts .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .image {
+    width: 50%;
+    margin: auto;
+    margin-top: 90px;
+  }
+  .main .write {
+    width: 80%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main1 .image {
+    width: 50%;
+    margin: auto;
+    margin-top: 90px;
+  }
+  .main1 .write {
+    width: 80%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background: white;
+    display: block;
+  }
+  nav .options {
+    display: none;
+  }
+  nav .options ul {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    background-color: beige;
+    display: none;
+  }
+  nav .navres {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .toggler {
+    display: block;
+  }
+  nav .toggler #toggle {
+    -webkit-appearance: none;
+    position: fixed;
+    z-index: 1010;
+    font-size: large;
+    outline: none;
+    font-size: 2rem;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  nav .toggler #toggle:checked {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: 1s;
+    transition: 1s;
+    font-size: 2rem;
+  }
+  nav .toggler #toggle:checked ul {
+    margin-top: 00px;
+  }
+  nav .toggler #toggle:checked::before {
+    content: "\f00d";
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .image {
+    width: 80%;
+    margin: auto;
+    margin-top: 90px;
+  }
+  .main .write {
+    width: 80%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gift .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    width: 60%;
+    margin-top: 90px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gift .container .gifting {
+    width: 90%;
+    text-align: center;
+  }
+  .gift .container .gifting img {
+    width: 40%;
+  }
+  .main1 {
+    margin-top: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main1 .image {
+    width: 80%;
+    margin: auto;
+    margin-top: 90px;
+  }
+  .main1 .write {
+    width: 80%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
